@@ -43,7 +43,7 @@ const teamData = [
     {
         name:'Dr. Krishna Sesha Giri',
         role:'Faculty Advisor',
-        image:images['Krishna_sir.png'],
+        image:images['Krishna_sir.webp'],
         mail:'krishna.s@iitpkd.ac.in',
         linkedin:'https://in.linkedin.com/in/krishna-sesha-giri-490a90b4'
     },
