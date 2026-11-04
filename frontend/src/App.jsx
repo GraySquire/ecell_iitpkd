@@ -1,15 +1,27 @@
 import Home from "./components/Home"
 import Navbar from "./components/Navbar";
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import AllEvents from "./pages/AllEvents.jsx";
 import Contacts from "./pages/Contacts.jsx";
 import './App.css'
 import Footer from "./components/Footer.jsx";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
 
   return (
     <>
+    <ScrollToTop />
     <Navbar></Navbar>
     {/* <RightNavBar/> */}
     {/* <Router> */}  

@@ -1,229 +1,265 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+/* ==========================================================================
+   Navbar Styling - E-Cell IIT Palakkad
+   ========================================================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.5rem;
+    background: rgba(15, 32, 39, 0.78);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    box-sizing: border-box;
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
-* {
+
+.navbar.navbar-scrolled {
+    background: rgba(15, 32, 39, 0.94);
+    border-bottom-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-container {
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
 }
 
-
-.active{
-    background-color: #EAF6FB;
-    border-radius: 5px;
-    color: #1b1b1b !important;
-}
-
-nav {
-    /* Make it see-through glass */
-    background: rgba(15, 32, 39, 0.7); 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    
-    /* Keep positioning */
-    display: flex;
-    justify-content: space-between;
+/* ---------------- Brand / Logo ---------------- */
+.nav-brand {
+    display: inline-flex;
     align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 4.5rem; /* Slightly taller for breathing room */
-    z-index: 1000;
-}
-
-/* nav{
-    display: flex;
-    scrollbar-width: none;
-    justify-content: space-between;
-    align-items: center;
-     background: linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 4rem;
-    z-index: 1000;
-    border-bottom: 2px solid #EAF6FB;
-    font-size: 1.2rem ;
-    overflow-x: hidden;
-    max-width: 100vw;
-    height: min-content;
-} */
-nav .title{
-    font-size: 1.5rem;
-    margin:0.2rem;
-    margin-left: 0.5rem;
-    font-weight: bold;
+    gap: 0.85rem;
     text-decoration: none;
-    /* color: #fbc45e;   */
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    user-select: none;
 }
-nav ul{
+
+.nav-brand:hover {
+    transform: scale(1.02);
+}
+
+.nav-logo-box {
+    background: #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
     display: flex;
-    list-style: none;
-}
-nav ul li{
-    list-style: none;
-    /* border-bottom: 2px solid #fbc45e; */
-}
-nav ul li a{
-    display: block;
-    text-decoration: none; 
-    /* to remove the underline */
-    color: #EAF6FB;
-    margin: 0 0.5rem;
-    padding: 0.5rem;
-    transition: background-color 0.5s ease-in-out;
-    border-radius: 5px;
-} 
-/* :not()  is a pseudo selector*/
-nav ul li a:not(.active):hover{
-    /* border-bottom-color: #172554; */
-    /* border-bottom: 2px solid white; */
-    background-color: #2C5364;
-    color: #C5D7E3;
-    border-radius: 5px; 
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-nav .menu{
-    position : absolute;
-    display: none;
-    flex-direction: column;
-    top: 0.95rem;
-    right: 0.5rem;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
+.nav-brand:hover .nav-logo-box {
+    box-shadow: 0 4px 16px rgba(251, 196, 94, 0.3);
+    border-color: rgba(251, 196, 94, 0.5);
 }
 
-nav .menu span{
-    height: 0.4rem;
-    width: 100%;  
-    /* width 100% => 100% of its parent width   */
-    background-color: #C5D7E3;
-    border-radius:0.2rem ;
-}
-
-
-.title > img{
-    /* margin: 0.2rem 0; */
-    margin-top: 0.3rem;
-    height:3.5rem;
-    border-radius:5px;
-    /* width: 20px; */
-}
-
-
-
-/* Logo */
-.nav-logo-container{
-
-background-color: #fdfaf5; 
-    box-shadow: none;
-    margin-top: 0;
-    padding: 0;
-    border-radius: 12px;
-    
-
-   /* background-color: #fdfaf5;
-  margin: auto;
-  margin-top: 5px;
-  border-radius: 12px;
-  display: inline-block;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);  */
-}
 .nav-logo {
-
-    width: 55px;
-    height: 55px;
-    /* If your logo is dark, invert it or use a white version. 
-       If it's already colorful, this drop-shadow helps it pop on dark bg */
-    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
-
-  /* width: 50px;
-  height: 50px;
-  display: block;
-  filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.4));
-  transition: transform 0.3s ease; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
-/* @media (max-width:800px){
-    nav .menu{
+.nav-brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.15;
+}
+
+.brand-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #fbc45e;
+    letter-spacing: 0.08em;
+    font-family: inherit;
+}
+
+.brand-subtitle {
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: #C5D7E3;
+    letter-spacing: 0.14em;
+    font-family: inherit;
+}
+
+/* ---------------- Navigation Links (Desktop) ---------------- */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #EAF6FB;
+    padding: 0.55rem 1.25rem;
+    border-radius: 9999px;
+    border: 1px solid transparent;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.02em;
+    background: transparent;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-1px);
+}
+
+/* Polished Active Link State */
+.nav-link.active {
+    color: #fbc45e !important;
+    background: rgba(251, 196, 94, 0.12);
+    border: 1px solid rgba(251, 196, 94, 0.35);
+    box-shadow: 0 0 16px rgba(251, 196, 94, 0.15);
+    font-weight: 600;
+}
+
+/* ---------------- Animated Hamburger Button ---------------- */
+.nav-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2.5rem;
+    height: 2.2rem;
+    z-index: 1001;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.nav-menu-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-btn-bar {
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background-color: #EAF6FB;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+}
+
+/* Hamburger to 'X' Transition */
+.nav-menu-btn.open .nav-btn-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-menu-btn.open .nav-btn-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.nav-menu-btn.open .nav-btn-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ---------------- Mobile Responsive ---------------- */
+@media (max-width: 768px) {
+    .nav-menu-btn {
         display: flex;
     }
-    nav{
+
+    .brand-subtitle {
+        display: none; /* Keep header compact on small screens */
+    }
+
+    .brand-title {
+        font-size: 1.05rem;
+    }
+
+    .nav-links {
+        display: flex;
         flex-direction: column;
-        align-items: start;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        width: 100%;
+        background: rgba(15, 32, 39, 0.98);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        padding: 1rem 1.25rem 1.5rem 1.25rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+        gap: 0.5rem;
+        transform: translateY(-120%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+    }
+
+    .nav-links.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.85rem 1.25rem;
+        border-radius: 12px;
+        font-size: 1.05rem;
         justify-content: center;
     }
-    nav ul{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom:0rem ;
 
-    }
-    nav ul.open{
-        display: flex;
-    }
-    nav ul li{
-        width: 100%;
-        text-align: center;
-    }
-    nav ul li a{
-        margin: 0.2rem 0.5rem;
-    }
-    .nav-logo-container{
-        margin: 0;
-    }
-} */
-
-
-@media (max-width: 800px) {
-    /* 1. Keep the main bar stable */
-    nav {
-        flex-direction: row; /* Keep Logo Left, Hamburger Right */
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 1rem; /* Add padding so logo doesn't touch edge */
-        height: 4.5rem;  /* Force fixed height */
-    }
-
-    /* 2. Fix the Menu Links to drop DOWN, not push inside */
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute; /* Takes it out of the flow */
-        top: 4.5rem;        /* Starts exactly below the navbar */
+    .nav-backdrop {
+        position: fixed;
+        top: 4.5rem;
         left: 0;
-        background: rgba(15, 32, 39, 0.95); /* Solid dark background */
-        backdrop-filter: blur(10px);
-        padding: 1rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
-
-    /* 3. Show menu when open */
-    nav ul.open {
-        display: flex;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0; /* More clickable space */
-    }
-
-    /* 4. Ensure Hamburger stays in place */
-    nav .menu {
-        display: flex;
-        position: static; /* Let flexbox handle placement */
-        margin-right: 0.5rem;
-    }
-
-    /* 5. Logo adjustments */
-    .nav-logo-container {
-        margin: 0;
+        width: 100vw;
+        height: calc(100vh - 4.5rem);
+        height: calc(100dvh - 4.5rem);
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        z-index: 999;
     }
 }
