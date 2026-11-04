@@ -41,25 +41,11 @@ const teamData = [
         linkedin:'https://www.linkedin.com/in/milind-thirunahari-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
-        name:'Prof. Mayank Tiwari',
+        name:'Dr. Krishna Sesha Giri',
         role:'Faculty Advisor',
-        image:images['ProfMayankSir.webp'],
-        mail:'mayank@iitpkd.ac.in',
-        linkedin:'https://www.linkedin.com/in/mayank-tiwari-3301268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
-    },
-    {
-        name:'Siddharth Bharti',
-        role:'Mentor',
-        image:images['siddharthBharti2.webp'],
-        mail:'132301033@smail.iitpkd.ac.in',
-        linkedin:'https://www.linkedin.com/in/siddharth-kr-997667249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
-    },
-        {
-        name:'Aryan',
-        role:'Mentor',
-        image:images['Aryan.webp'],
-        mail:'112301041@smail.iitpkd.ac.in',
-        linkedin:'https://www.linkedin.com/in/aryan-b34639288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+        image:images['Krishna_sir.png'],
+        mail:'krishna.s@iitpkd.ac.in',
+        linkedin:'https://in.linkedin.com/in/krishna-sesha-giri-490a90b4'
     },
     {
         name:'Tanay Vashist',
@@ -76,21 +62,21 @@ const teamData = [
         linkedin:'https://www.linkedin.com/in/aadityadinesh/'
     },
     {
-        name:'Ausula Madhu Charan Chary',
-        role:'Event Coordinator Head',
+        name:'Emmanuel Johnson',
+        role:'Mentor',
+        image:images['Emmanuel_Johnson.webp'],
+        mail:'122401015@smail.iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/in/emmanuel-johnson-618598332/'
+    },
+    {
+        name:'Madhu Charan Chary',
+        role:'Logistics Head & Media Mentor',
         image:images['MCC.webp'],
         mail:'132401010@smail.iitpkd.ac.in',
         linkedin:'https://www.linkedin.com/in/aashutosh-kr-ray-9b505b312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
     },
     {
-        name:'Mohnish Murugavel',
-        role:'Outreach and Internal Head',
-        image:images['Mohnish_Murugavel.webp'],
-        mail:'142501019@smail.iitpkd.ac.in',
-        linkedin:'https://www.linkedin.com/in/mohnish-murugavel-1b50a73b7/'
-    },
-    {
-        name:'Nampally Apoorva Sai Kaushik',
+        name:'Apoorva Sai Kaushik',
         role:'Event Coordinator',
         image:images['Apoorva_Sai_Kaushik_Nampally.webp'],
         mail:'142501021@smail.iitpkd.ac.in',
@@ -98,17 +84,45 @@ const teamData = [
     },
     {
         name:'Pamu Vedhanth Chandr',
-        role:'Outreach and Internal Head',
+        role:'Outreach and Internal Relations',
         image:images['Vedhanth_Chandr.webp'],
         mail:'112501022@smail.iitpkd.ac.in',
         linkedin:''
     },
     {
-        name:'Emmanuel Johnson',
-        role:'Content Creator & Media Publicity Head',
-        image:images['Emmanuel_Johnson.webp'],
-        mail:'122401015@smail.iitpkd.ac.in',
-        linkedin:'https://www.linkedin.com/in/emmanuel-johnson-618598332/'
+        name:'Sai Kiran',
+        role:'Tech Mentor',
+        image:images['Sai_Kiran.webp'],
+        mail:'142401034@smail.iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/in/aashutosh-kr-ray-9b505b312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+    },
+    {
+        name:'Mohnish Murugavel',
+        role:'Outreach and Internal Relations & Tech',
+        image:images['Mohnish_Murugavel.webp'],
+        mail:'142501019@smail.iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/in/mohnish-murugavel-1b50a73b7/'
+    },
+    {
+        name:'Ridhwiman Gayen',
+        role:'Tech',
+        image:images['Ridhwiman_Gayen.webp'],
+        mail:'122601036@smail.iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/in/ridhwiman-gayen-ab0640425/'
+    },
+    {
+        name:'Devidyuti K Pisharody',
+        role:'Media',
+        image:images['Devidyuti_K_Pisharody.webp'],
+        mail:'122601013@smail.iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/in/devidyuti-k-pisharody-10b88341a/'
+    },
+    {
+        name:'Ishaan Singh',
+        role:'Media',
+        image:images['Ishaan_Singh.webp'],
+        mail:'142601017@smail.iitpkd.ac.in',
+        linkedin:'https://www.linkedin.com/search/results/all/?keywords=Ishaan%20Singh&origin=HISTORY&position=0'
     }
 ]
 
