@@ -1,5 +1,5 @@
 footer {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(135deg, #10294F, #1F437C , #32548F);
     color: #EAF6FB;
     width: 100%;
     box-sizing: border-box;
@@ -21,7 +21,7 @@ footer {
 
 .footer_div2 {
     color: #EAF6FB;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(135deg, #10294F, #1F437C , #32548F);
     padding: 1rem;
     padding-bottom: calc(1rem + env(safe-area-inset-bottom));
     text-align: center;
