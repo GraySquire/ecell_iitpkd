@@ -44,11 +44,11 @@ const HeroSection = () => {
         },
         particles: {
             color: {
-                value: "#ffea70", // Base color of the dots
+                value: "#ffc98a", // Base color of the dots
             },
             links: {
                 // THIS IS THE "NETWORK" PART
-                color: "#dfff52",
+                color: "#efffa6",
                 distance: 150, // How far dots must be to connect
                 enable: true,
                 opacity: 0.2, // Keep lines subtle so text is readable
