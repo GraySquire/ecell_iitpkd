@@ -48,7 +48,7 @@ const HeroSection = () => {
             },
             links: {
                 // THIS IS THE "NETWORK" PART
-                color: "#ffffff",
+                color: "#dfff52",
                 distance: 150, // How far dots must be to connect
                 enable: true,
                 opacity: 0.2, // Keep lines subtle so text is readable
