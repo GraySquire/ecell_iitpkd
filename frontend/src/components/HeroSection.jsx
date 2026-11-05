@@ -19,7 +19,7 @@ const HeroSection = () => {
         background: {
             // A professional deep slate blue/black background
             color: {
-                value: "#081B33", 
+                value: "#10294F", 
             },
         },
         fpsLimit: 120,
