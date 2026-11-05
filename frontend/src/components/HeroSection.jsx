@@ -37,7 +37,7 @@ const HeroSection = () => {
                     distance: 150,
                     links: {
                         opacity: 1,
-                        color: "#48ffad" // A bright cyan highlight on hover grab
+                        color: "#38ff91" // A bright cyan highlight on hover grab
                     }
                 },
             },
