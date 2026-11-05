@@ -37,21 +37,21 @@ const HeroSection = () => {
                     distance: 150,
                     links: {
                         opacity: 1,
-                        color: "#38ff91" // A bright cyan highlight on hover grab
+                        color: "#70C8DC" // A bright cyan highlight on hover grab
                     }
                 },
             },
         },
         particles: {
             color: {
-                value: "#ffc98a", // Base color of the dots
+                value: "#F4C98A", // Base color of the dots
             },
             links: {
                 // THIS IS THE "NETWORK" PART
-                color: "#efffa6",
+                color: "#D5E5F5",
                 distance: 150, // How far dots must be to connect
                 enable: true,
-                opacity: 0.2, // Keep lines subtle so text is readable
+                opacity: 0.25, // Keep lines subtle so text is readable
                 width: 1,
             },
             move: {
