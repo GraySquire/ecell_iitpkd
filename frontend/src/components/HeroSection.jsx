@@ -44,7 +44,7 @@ const HeroSection = () => {
         },
         particles: {
             color: {
-                value: "#ffffff", // Base color of the dots
+                value: "#FF5F1F", // Base color of the dots
             },
             links: {
                 // THIS IS THE "NETWORK" PART
