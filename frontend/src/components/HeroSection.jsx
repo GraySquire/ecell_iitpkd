@@ -19,7 +19,7 @@ const HeroSection = () => {
         background: {
             // A professional deep slate blue/black background
             color: {
-                value: "#10294F", 
+                value: "#12243A", 
             },
         },
         fpsLimit: 120,
@@ -37,18 +37,18 @@ const HeroSection = () => {
                     distance: 150,
                     links: {
                         opacity: 1,
-                        color: "#FFDCA8" // A bright cyan highlight on hover grab
+                        color: "#FFB86B" // A bright cyan highlight on hover grab
                     }
                 },
             },
         },
         particles: {
             color: {
-                value: "#F4C98A", // Base color of the dots
+                value: "#F2A65A", // Base color of the dots
             },
             links: {
                 // THIS IS THE "NETWORK" PART
-                color: "#B8D3EA",
+                color: "#B8C8D9",
                 distance: 150, // How far dots must be to connect
                 enable: true,
                 opacity: 0.25, // Keep lines subtle so text is readable
