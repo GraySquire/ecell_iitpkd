@@ -21,7 +21,7 @@ footer {
 
 .footer_div2 {
     color: #EAF6FB;
-    background: linear-gradient(135deg, #10294F, #1F437C , #32548F);
+    background: linear-gradient(135deg, #12243A, #1F437C , #32548F);
     padding: 1rem;
     padding-bottom: calc(1rem + env(safe-area-inset-bottom));
     text-align: center;
